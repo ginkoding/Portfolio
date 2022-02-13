@@ -1,0 +1,242 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*************HEADER**********/
+
+#title {
+  width: 100%;
+  background-image: url(./IMAGES/faded\ leaf.png);
+  background-size: cover;
+  overflow: hidden;
+  color: #0a090c;
+  position: absolute;
+  filter: drop-shadow(0px 0px 5px #222);
+}
+
+H1 {
+  font-size: 6vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 1.9em 0 0 0.4em;
+  text-shadow: 0px 3px 3px #16440e, 0px 14px 10px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  font-size: 1.5vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 0 0 0 2em;
+  text-shadow: 0px 2px 0px #16440e, 0px 14px 10px rgba(0, 0, 0, 0.15);
+}
+
+#titlewords {
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+}
+
+/*************ABOUT ME**********/
+#aboutMe {
+  width: 50vw;
+  height: 400px;
+  padding: 20% 0 10% 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#aboutMe h3 {
+  font-size: 24px;
+}
+
+#aboutMe p {
+  font-size: 16px;
+  font-weight: 200;
+  background-color: whitesmoke;
+  color: black;
+}
+
+/*************SECTIONS DESKTOP**********/
+
+#meGif {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+main section {
+  background-color: white;
+  margin: 20px;
+  border: solid 1px #0a090c;
+  padding: 0px;
+  border-radius: 10px;
+  width: 25vw;
+}
+
+section p {
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  background-color: #0a090c;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  color: white;
+}
+
+/*************SECTIONS TABLET**********/
+@media only screen and (max-width: 1050px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    margin: 0 0 0 5vw;
+  }
+
+  main section {
+    width: 40vw;
+  }
+}
+
+/*************SECTIONS MOBILE**********/
+
+@media only screen and (max-width: 450px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    margin: 0;
+  }
+  main section {
+    width: 400px;
+  }
+}
+
+/*************CONTACT FORM**********/
+
+.container {
+  width: 400px;
+  background-color: rgba(243, 243, 243, 0.7);
+  border-radius: 6px;
+  margin: 30px 0px 30px 30px;
+}
+
+#contactForm {
+  padding: 25px;
+}
+
+.container h3 {
+  margin-top: 0px;
+  padding: 0 0 20px 0;
+  font-size: 28px;
+}
+
+input[type="submit"] {
+  background-color: #63a42a;
+  border: none;
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  width: 350px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #16440e;
+  transition: 0.5s ease-in-out;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+  width: 100%;
+  padding: 10px 16px;
+  margin: 8px 0px;
+  border-radius: 2%;
+  border: 0px;
+  resize: none;
+}
+
+/*************BUTTONS/FOOTER DESKTOP AND TABLET**********/
+
+footer {
+  background-image: url(./IMAGES/faded\ leaf.png);
+  display: flex;
+  justify-content: center;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+a {
+  background-color: #63a42a;
+  padding: 10px 25px;
+  margin: 30px 20px 20px 20px;
+  border-radius: 15px;
+  color: azure;
+  font-size: 2rem;
+
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  width: 80px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #16440e;
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+a:visited {
+  background-color: #16440e;
+}
+
+/***************FOOTER/CONTACT FORM PHONE ONLY*********************/
+@media only screen and (max-width: 415px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    margin: 0;
+    border-radius: 0;
+    width: 100vw;
+  }
+
+  #buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
