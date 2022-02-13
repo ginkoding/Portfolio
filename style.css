@@ -28,7 +28,7 @@ H1 {
   justify-content: center;
   position: relative;
   padding: 1.9em 0 0 0.4em;
-  text-shadow: 0px 3px 3px #16440e, 0px 14px 10px rgba(0, 0, 0, 0.15);
+  text-shadow: 0px 3px 3px #0e2c09, 0px 14px 10px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
@@ -37,7 +37,7 @@ h2 {
   justify-content: center;
   position: relative;
   padding: 0 0 0 2em;
-  text-shadow: 0px 2px 0px #16440e, 0px 14px 10px rgba(0, 0, 0, 0.15);
+  text-shadow: 0px 2px 0px #0c2508, 0px 14px 10px rgba(0, 0, 0, 0.15);
 }
 
 #titlewords {
