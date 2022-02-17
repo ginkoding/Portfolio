@@ -19,11 +19,10 @@ body {
 header img {
   width: 100%;
   background-image: url(./IMAGES/faded\ leaf.png);
-  opacity: 0.9;
+  background-color: #0c2508;
   background-size: cover;
   overflow: hidden;
   color: #0a090c;
-  filter: drop-shadow(0px 0px 5px #222);
   position: absolute;
 }
 
@@ -57,14 +56,15 @@ h2 {
 #aboutMe {
   width: 50vw;
   height: 2ovh;
+  margin-top: 20%;
   margin-left: auto;
   margin-right: auto;
 }
 
 #aboutMe h3 {
-  margin-top: 30%;
   font-size: 24px;
   margin-left: 20px;
+  font-family: "Trirong", serif;
 }
 
 #aboutMe p {
@@ -124,7 +124,7 @@ section p {
   }
 }
 
-/*************SECTIONS MOBILE**********/
+/*************ABOUT ME/SECTIONS MOBILE**********/
 
 @media only screen and (max-width: 650px) {
   main {
@@ -145,6 +145,16 @@ section p {
   .mobileView {
     display: flex;
     font-size: 2.7vw;
+    padding: 0 0 0 1em;
+  }
+
+  #aboutMe {
+    margin-left: 10vw;
+    margin-right: 5vw;
+  }
+
+  #aboutMe p {
+    width: 80vw;
   }
 }
 
