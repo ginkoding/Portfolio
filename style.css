@@ -47,15 +47,14 @@ h2 {
 }
 
 #titlewords {
-  font-family: "Lato", sans-serif;
-  font-family: "Montserrat", sans-serif;
   color: white;
 }
 
 /*************ABOUT ME**********/
+
 #aboutMe {
   width: 50vw;
-  height: 2ovh;
+  height: 23vh;
   margin-top: 20%;
   margin-left: auto;
   margin-right: auto;
@@ -74,6 +73,33 @@ h2 {
   margin-bottom: 20px;
   background-color: whitesmoke;
   color: black;
+}
+
+#contactbtn {
+  background-color: #0c2508;
+  color: white;
+  width: 35vw;
+  height: 5vh;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#contactbtn:hover {
+  background-color: #63a42a;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.3s ease-in-out;
+}
+
+#contactbtn p {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 /*************SECTIONS DESKTOP**********/
@@ -200,6 +226,11 @@ main section a:hover {
 
   #aboutMe p {
     width: 80vw;
+  }
+
+  #contactbtn {
+    width: 200px;
+    margin-top: 50px;
   }
 }
 
