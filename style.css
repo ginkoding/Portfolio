@@ -21,7 +21,6 @@ header img {
   background-image: url(./IMAGES/faded\ leaf.png);
   background-color: #0c2508;
   background-size: cover;
-  overflow: hidden;
   color: #0a090c;
   position: absolute;
 }
@@ -53,9 +52,10 @@ h2 {
 /*************ABOUT ME**********/
 
 #aboutMe {
-  width: 50vw;
-  height: 23vh;
+  width: 60vw;
+  height: 17vh;
   margin-top: 20%;
+  margin-bottom: 5%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -84,6 +84,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5vh;
+  margin-top: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,6 +101,39 @@ h2 {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
+}
+
+/*************ABOUT ME MOBILE**********/
+
+@media only screen and (max-width: 650px) {
+  #aboutMe {
+    width: 60vw;
+    height: 27vh;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #aboutMe {
+    margin-left: 10vw;
+    margin-right: 5vw;
+  }
+
+  #aboutMe p {
+    width: 80vw;
+  }
+
+  #contactbtn {
+    width: 200px;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  #aboutMe {
+    height: 40vh;
+  }
 }
 
 /*************SECTIONS DESKTOP**********/
@@ -189,7 +223,7 @@ main section a:hover {
   }
 }
 
-/*************ABOUT ME/SECTIONS MOBILE**********/
+/*************HEADER/SECTIONS MOBILE**********/
 
 @media only screen and (max-width: 650px) {
   main {
@@ -217,20 +251,7 @@ main section a:hover {
     display: flex;
     font-size: 2.7vw;
     padding: 0 0 0 1em;
-  }
-
-  #aboutMe {
-    margin-left: 10vw;
-    margin-right: 5vw;
-  }
-
-  #aboutMe p {
-    width: 80vw;
-  }
-
-  #contactbtn {
-    width: 200px;
-    margin-top: 50px;
+    margin: 0 0 4em 0;
   }
 }
 
