@@ -16,6 +16,79 @@ body {
   display: none;
 }
 
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + #titlewords {
+  padding-top: 41px;
+} */
+
+.topnav {
+  background-color: #0c2508;
+  min-height: 41px;
+}
+
+.topnav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.active {
+  background-color: #0c2508;
+  color: white;
+  min-height: 41px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav a:hover {
+  background-color: #63a42a;
+  color: white;
+  transition: 2s;
+}
+
+@media screen and (max-width: 650px) {
+  .topnav .active {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: inline;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive {
+    float: none;
+  }
+
+  .topnav.responsive {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
 header img {
   width: 100%;
   background-image: url(./IMAGES/faded\ leaf.png);
