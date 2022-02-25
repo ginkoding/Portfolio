@@ -217,7 +217,7 @@ h2 {
 
 /*************SECTIONS DESKTOP**********/
 
-#meGif {
+#projects {
   width: 100%;
   background-color: white;
   border-radius: 10px 10px 0 0;
@@ -381,6 +381,80 @@ textarea {
   border-radius: 5px;
   border: 0px;
   resize: none;
+}
+
+/**************CERT PAGE***************/
+
+.certImg {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.certImg img {
+  width: 45vw;
+  min-width: 450px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 40px 25px;
+}
+
+.certl,
+certr {
+  z-index: 0;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.certl:hover {
+  z-index: 2;
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: top left;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.certr:hover {
+  z-index: 2;
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: top right;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#certTitle {
+  font-size: 3rem;
+  margin: 20% 0 2% 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 1170px) {
+  .certl:hover {
+    transform-origin: center;
+  }
+  .certr:hover {
+    transform-origin: center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .certImg img {
+    width: 90vw;
+    min-width: 280px;
+    margin: 30px 20px;
+    transform: none !important;
+  }
+
+  #certTitle {
+    padding: 30px;
+    font-size: 2rem;
+  }
 }
 
 /*************BUTTONS/FOOTER DESKTOP AND TABLET**********/
