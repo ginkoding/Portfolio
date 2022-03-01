@@ -163,7 +163,6 @@ h2 {
 
 #contactbtn {
   background-color: #0c2508;
-  color: white;
   width: 35vw;
   height: 5vh;
   border-radius: 10px;
@@ -175,6 +174,11 @@ h2 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+#contactbtn a {
+  text-decoration: none;
+  color: white;
 }
 
 #contactbtn:hover {
