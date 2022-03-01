@@ -217,15 +217,10 @@ h2 {
 
 /*************SECTIONS DESKTOP**********/
 
-#projects {
+.projects {
   width: 100%;
   background-color: white;
   border-radius: 10px 10px 0 0;
-}
-#writerImg {
-  background-color: white;
-  border-radius: 10px 10px 0 0;
-  width: 100%;
 }
 
 main {
@@ -233,24 +228,37 @@ main {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  background-color: whitesmoke;
 }
 
 main section {
-  background-color: white;
-  margin: 20px;
-  border: solid 1px #0a090c;
   background-color: #0a090c;
+  border: solid 1px #0a090c;
   padding: 0px;
   border-radius: 10px;
   width: 20vw;
 }
 
+main a {
+  margin: 20px;
+  text-decoration: none;
+  background-color: #0a090c;
+  border-radius: 10px;
+}
+
+main a:hover {
+  transform: scale(1.02);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
 section p {
   font-family: "Lato", sans-serif;
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
   display: flex;
+  flex-direction: column;
   background-color: #0a090c;
   padding: 20px;
   border-radius: 0 0 10px 10px;
@@ -261,30 +269,10 @@ section h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
   font-size: 1.5rem;
   padding: 5px;
   color: white;
-}
-
-main section a {
-  color: #63a42a;
-  text-decoration: none;
-}
-
-main section a:hover {
-  color: #16440e;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
-
-#writerP {
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-
-#writerP a {
-  width: fit-content;
 }
 
 /*************SECTIONS TABLET**********/
