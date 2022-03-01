@@ -301,8 +301,11 @@ section h4 {
     background-color: whitesmoke;
     margin: 0;
   }
+  main a {
+    width: 90vw;
+  }
   main section {
-    width: 400px;
+    width: 90vw;
   }
 
   .desktopView {
