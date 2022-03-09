@@ -444,6 +444,11 @@ certr {
     min-width: 280px;
     margin: 30px 20px;
     transform: none !important;
+    box-shadow: none;
+  }
+
+  .certImg img:hover {
+    box-shadow: none;
   }
 
   #certTitle {
