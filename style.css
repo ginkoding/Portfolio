@@ -380,62 +380,60 @@ textarea {
 
 /**************CERT PAGE***************/
 
+#certInfo{
+  margin: 20% 0 2% 0;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  padding: 20px;
+}
+
 .certImg {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-
-  transform: scale(1);
-  transition: transform 0.5s;
 }
 
 .certImg img {
-  width: 45vw;
-  min-width: 450px;
+  width: 10vw;
+  min-width: 250px;
   background-color: white;
   border-radius: 4px;
-  padding: 20px;
+  padding: 10px;
   margin: 40px 25px;
 }
 
-.certl,
-certr {
+.cert {
   z-index: 0;
   transform: scale(1);
   transition: transform 0.5s;
 }
 
-.certl:hover {
+.cert:hover {
   z-index: 2;
-  transform: scale(1.2);
-  transition: transform 0.5s ease-in-out;
-  transform-origin: top left;
+  transform: scale(2.1);
+  margin: 0 auto; 
+  transition: transform 0.9s ease-in-out;
+  transform-origin: center;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.certr:hover {
-  z-index: 2;
-  transform: scale(1.2);
-  transition: transform 0.5s ease-in-out;
-  transform-origin: top right;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
 
 #certTitle {
   font-size: 3rem;
-  margin: 20% 0 2% 0;
+  margin: 5% 0 2% 0;
   padding: 0;
+  color: #0c2508;
 }
 
+
 @media only screen and (max-width: 1170px) {
-  .certl:hover {
+  .cert:hover {
     transform-origin: center;
   }
-  .certr:hover {
-    transform-origin: center;
-  }
+
 }
 
 @media only screen and (max-width: 650px) {
