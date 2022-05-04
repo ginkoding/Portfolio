@@ -233,6 +233,9 @@ main {
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-evenly;
+  max-width: 1020px;
+  margin: auto;
+  padding-bottom: 15vh;
 }
 
 main section {
